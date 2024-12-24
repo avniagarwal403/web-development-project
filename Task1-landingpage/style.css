@@ -1,0 +1,274 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family:"Playwrite Hrvatska Lijeva" ;
+    src: url(PlaywriteHRLijeva-VariableFont_wght.ttf);
+}
+
+body{
+   
+    background-color:#fffcf8;
+    margin: 0 100px;
+
+}
+.upper{
+    background-color: #6bacb9;
+    height: 70px;
+    border-radius: 0 0 30px 30px;
+    font-size: 20px;
+    font-weight: 500;
+   
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    
+    
+    
+    
+
+}
+.nav img#photo {
+    position: absolute; 
+    
+    top: 19px; 
+    transform: translateY(-50%);  
+    width: 200px;  
+    height: 400px;  
+    left: 83%;
+}
+
+.nav .logo h1{
+    font-weight: 600;
+    font-family:"Playwrite Hrvatska Lijeva";
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    padding-left: 30px;
+
+
+}
+.nav .logo b{
+color: #fc7b3a;
+font-size: 40px;
+
+}
+.nav ul
+{
+    
+   
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li{
+    margin-right: 34px ;
+    height: 30px;
+    width: 108px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 5px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color:black ;
+    font-weight: 400;
+    font-family:sans-serif;
+    font-size:15px ;
+    color: #fffcf8;
+
+}
+.nav ul li a:hover {
+    color: #111;
+   
+    
+    
+}
+
+
+
+input
+{
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.signin
+{
+    background-color: #fff6d8 ;
+    border: none;
+    border-radius: 20px;
+    margin-right: 10px;
+    height: 30px;
+    font-size: 10px;
+   
+
+}
+.signup
+{
+    background-color: #c85300;
+    color: #ffff;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    margin-right: 110px;
+    font-size: 10px;
+
+}
+.content
+{
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+
+}
+.content .content-left
+{
+    display: block;
+    width: 100%;
+    
+
+}
+.content  .content-left .info
+{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.content .content-left .info h2{
+    font-size: 55px;
+    font-family: "Playwrite Hrvatska Lijeva";
+    margin-bottom: 30px ;
+    color: #FD8B51;
+    margin-top:0;
+    font-weight: 700;
+    
+}
+.content .content-left .info p{
+    font-size: 15px;
+    line-height: 2pc;
+    margin-bottom: 30px;
+    font-family:sans-serif;  
+    color: #d43f12;
+}
+.content .content-left button{
+    padding: 5px 12px;
+    background-color:#77b2bd;
+    color: #ffffff;
+    border-radius: 23px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    height: 42px;
+    width: 150px;
+    font-weight: 700;
+    font-family: "Playwrite Hrvatska Lijeva";
+}
+.content .content-right{
+display: block;
+width: 100%;
+}
+.content .content-right img{
+    width: 700px;
+    height: auto;
+    position: relative;
+   
+    user-select: none;
+    margin-left: 20px;
+    
+}
+
+    .category
+    {
+        width: 100%;
+        display: flex;
+        margin-bottom: 50px;
+        justify-content:space-between;
+    }
+    .category .lsit-item{
+        width: 90%;
+        position: relative;
+        margin-top: 50px;
+    }
+   .category .list-item h3{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: "Playwrite Hrvatska Lijeva";
+    margin-bottom: 120px;
+   }
+   .category .list-item .card-list
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.category .card-list .card{
+    width: 200px;
+    height: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    background-color: white;
+    outline: 2px solid #FCCD2A;
+    margin-left:100px;
+}
+.category .card-list .card img{
+    width: 100px;
+    height:auto ;
+    bottom: 140px;
+    left: 50px;
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    box-shadow: 0 10px 15px #FCCD2A;
+    border-radius: 50%;
+}
+
+.category .card-list .card .food-title
+{
+padding: 40px 0 10px;
+}
+.category .card-list .card .food-title h1
+{
+text-align: center;
+font-weight: bold;
+font-size: 16px;
+font-family: sans-serif";
+
+}
+
+.category .card .desc-food p{
+    font-size: 9px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: "Playwrite Hrvatska Lijeva";
+
+}
+.category .card .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+.photo
+{
+    height: 20px;
+    width: 20px;
+}
+
